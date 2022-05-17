@@ -1,62 +1,89 @@
-/* html styles */
+/* HTML Page Styles */
 html {
-    font-family: 'Bahnschrift';
+    font-family: 'Bahnschrift', sans-serif;
     font-size: 100%;
-    padding: 0;
     scroll-behavior: smooth;
-    background-image:linear-gradient(to right, #808080, #3fada8)
+    background-image: linear-gradient(to right, #808080, #3fada8);
+    vertical-align: middle;
+    overflow-x: hidden;
+
 }
-/* remove underline from links */
+
+/* Remove Underline From Links */
 a {
     text-decoration: none;
 }
-/* footer */
+
+/* Footer Styles (Contact Information)  */
 
 footer {
     width: 100%;
-    min-height: 130px;
+    min-height: 0px;
     padding: 10px;
-    
+    position: relative;
+    clear: both;
 }
 
-/* nav bar */
+/* Navigation Bar */
 
 header {
-    width: 100%;
-    height: 20%;
+    min-height: 130px;
+    width: 110%;
+    height: 130px;
+    background-color: grey;
+    margin-top: -1.5%;
+    margin-left: -5%;
+    border: 1px solid black;
+    padding: 1px;
+    position: relative;
 }
 
 nav>ul {
     list-style-type: none;
     font-family: Verdana;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    position: relative;
     text-align: center;
+    left: 160px;
+    padding: 15px;
 }
 
-nav>ul li {
+header>nav ul li {
     display: inline-block;
+    position: relative;
+    bottom: 13px;
 }
 
-nav>ul li a {
+header>nav ul li a {
+    background-color: lightcyan;
     font-size: 1.2em;
-    display: inline-block;
+    display: relative;
     padding: 10px;
     color: rgb(0, 0, 0);
+    margin-right: 130px;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
+/* Navigation Pseudo-Elements */
 nav>ul li a:hover {
     background-color: rgb(145, 136, 136);
     color: white
 }
 
-header > nav ul li a > .tsumiki_header {
-    width: 100px;
+header>nav ul a>.tsumiki_header {
+    min-width: 80px;
+    width: 80px;
     border-radius: 50%;
     border: 1.2px solid black;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    right: 100px;
+    top: 15px
+}
+
+header>nav ul a > .tsumiki_header:hover {
+    transform: scale(1.25);
 }
 
 /* Welcome Message */
@@ -70,6 +97,8 @@ header > nav ul li a > .tsumiki_header {
     border: 1.2px solid black;
 }
 
+/* Home Image (small feature :D)*/
+
 .tsumiki:hover {
     transform: rotate(15deg) scale(0.85);
 }
@@ -78,13 +107,14 @@ header > nav ul li a > .tsumiki_header {
     text-align: center;
     padding: 45px;
 }
+
 .welcome h1 {
     font-size: 40px;
     font-weight: bold;
 }
 
 .welcome>h2 {
-    font-weight:lighter;
+    font-weight: lighter;
     padding: 20px;
 }
 
@@ -100,6 +130,8 @@ a.start {
     animation-delay: 0.3s;
 }
 
+/* Start Button Pseudo-Elements*/
+
 a.start:hover {
     color: black;
     background: aquamarine;
@@ -112,11 +144,12 @@ a.start:active {
 }
 
 
-/* redirect button */
+/* Redirect Button */
 
 a.firstbutton {
     padding: 7px;
     border-radius: 30px;
+    width: 110px;
     border: 2px solid black;
     text-decoration: none;
     background: aqua;
@@ -124,92 +157,146 @@ a.firstbutton {
     animation-delay: 0.3s;
 }
 
+/* Pseudo Styles for Redirect Button */
+
 a.firstbutton:hover {
-    background: aquamarine;
     color: black;
-    transition: .3s;
+    background: aquamarine;
+    transition: .1s
 }
 
-.table>.about>a.firstbutton {
-    position: absolute;
-    bottom: 25%;
-    right: 1530px
-}
-
-.table>.career>a.firstbutton {
-    position: absolute;
-    bottom: 25%;
-    right: 1100px
-}
-
-.table>.SP>a.firstbutton {
-    position: absolute;
-    bottom: 25%;
-    right: 615px
-}
-
-.table>.feedback>a.firstbutton {
-    position: absolute;
-    bottom: 25%;
-    right: 203px;
-}
-
-/* Styling the Table of Contents */
-
-.table {
-    text-decoration: none;
-    display: flex;
-    width: 90%;
-    height: 370px;
-    position: relative;
-    padding: 80px
-}
-
-.table>.about {
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 8px;
-    max-width: 430px;
-    margin-right: 15px;
-    background-color: white;
-}
-
-.table>.career {
-    border: 2px solid black;
-    border-radius: 20px;
-    max-width: 450px;
-    padding: 8px;
-    margin-right: 15px;
-    background-color: white;
-}
-
-.table>.SP {
-    border: 2px solid black;
-    border-radius: 20px;
-    max-width: 450px;
-    padding: 8px;
-    margin-right: 15px;
-    background-color: white;
-}
-
-.table>.feedback {
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 600px;
-    padding: 8px;
-    margin-right: 15px;
-    background-color: white;
-}
-
-/* General Styles */
-.table h1 {
+/* Styling the "table" and Forming the "Tables" */
+.contents div {
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 12px;
+    margin-left: 3%;
+    background-color: white;
 }
 
-.table h3 {
+.about, .career, .SP, .feedback {
+    float: left;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 11px;
+    width: 20%;
+    height: 280px;
+}
+
+/*index.html General Styles. */
+.contents h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 2%;
+    padding: 8px;
+}
+
+.contents h3 {
     text-align: center;
     font-weight: normal;
+}
+
+/* about.html image styles(will separate into another .css later) */
+
+.image1 {
+    float: left;
+    margin-left: 20%;
+    padding-right: 10%;
+    width: 15%;
+    height: 50%
+}
+
+.image2 {
+    float: left;
+    padding-right: 10%;
+    width: 15%;
+    height: 50%
+}
+
+.image3 {
+    float: left;
+    padding-right: 10%;
+    width: 15%;
+    height: 50%
+}
+
+.image4 {
+    float: left;
+    width: 42%;
+    border: 2px solid black;
+    border-radius: 160px;
+    margin-left: 65%;
+    margin-top:-15%;
+    height: 50%;
+}
+/* Small animation :D */
+
+.image4:hover {
+    transform: rotate(-15deg) scale(1.15);
+}
+
+/* about.html text styles */
+
+.about_table {
+    text-align: center;
+}
+
+.about_table h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.3em;
+}
+
+.about_table h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.about_table h3 {
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+/* about.html forming the tables */
+
+.about_me {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 12px;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    height: 400px;
+}
+
+.skills {
+    float: left;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 12px;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 34%;
+    height: 520px;
+}
+
+.hobby {
+    float: left;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 12px;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 34%;
+    height: 420px;
+}
+
+.hobby > .gaming h2, .nerdy li, .sports li{
+    text-align:left;
+    padding-left: 30px
+
 }
