@@ -221,10 +221,10 @@ a.firstbutton:hover {
 
 .image4 {
     float: left;
-    width: 42%;
+    width: 35%;
     border: 2px solid black;
-    border-radius: 160px;
-    margin-left: 65%;
+    border-radius: 120px;
+    margin-left: 77%;
     margin-top:-15%;
     height: 50%;
 }
