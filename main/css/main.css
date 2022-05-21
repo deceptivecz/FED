@@ -317,10 +317,13 @@ a.firstbutton:hover {
 
 /* career.html layout styles */
 
-.hero {
+.hero h1{
     text-align: center;
-    font-size: 1.5em;
-    font-weight: bolder;
+    font-size: 2.6em;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 2% auto;
+    padding: 10px;
 }
 
 .job_box {
@@ -328,6 +331,7 @@ a.firstbutton:hover {
     border: 2px solid black;
     border-radius: 20px;
     background-color: white;
+    padding-top: 15px;
     padding: 12px;
     margin-left: 6%;
     width: 34%;
@@ -343,6 +347,17 @@ a.firstbutton:hover {
     margin-left: 13.5%;
     width: 34%;
     height: 380px;
+}
+.job_box3 {
+    float: left;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 12px;
+    margin: 5% 16%;
+    width: 65%;
+    height: 380px;
+ 
 }
 
 /* Table Styles */
@@ -366,9 +381,49 @@ th {
 
 .job_box > .analyst_desc {
     text-align: center;
-}
+    font-weight: normal;
+    font-size: 1.15em;
+}   
 
 .job_box > img {
     display: block;
     margin: 3% auto;
+}
+
+.job_box2 h1,h3{
+    text-align: center;
+}
+.job_box2 h3 {
+    font-weight: normal;
+}
+
+.job_box2 img {
+    display: block;
+    margin: 3% auto;
+}
+
+.job_box3 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.15em
+}
+
+.job_box3 h2 {
+    text-align: center;
+    font-size: 1.4em;
+    margin: -2% auto;
+    padding: 8px;
+}
+
+.job_box3 h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.15em
+}
+
+.job_box3 img {
+    float: left;
+    padding-right: 10%;
+    display: block;
+    margin: 3% 5%;
 }
