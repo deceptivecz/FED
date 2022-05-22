@@ -1,12 +1,11 @@
 /* HTML Page Styles */
 html {
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 100%;
     scroll-behavior: smooth;
     background-image: linear-gradient(to right, #808080, #3fada8);
     overflow-x: hidden;
     animation: fadein 0.3s;
-
 }
 
 /* Remove Underline From Links */
@@ -110,13 +109,11 @@ header>nav ul a>.tsumiki_header:hover {
 .welcome h1 {
     font-size: 40px;
     font-weight: bold;
-    animation: fadein 2s;
 }
 
 .welcome>h2 {
     font-weight: lighter;
     padding: 20px;
-    animation: fadein 3s;
 }
 
 
