@@ -1,0 +1,58 @@
+/*
+=================================================
+                feedback.html Styles 
+=================================================
+*/
+html {
+    font-size: 1em;
+    font-weight: normal;
+}
+div.formRow {
+    display: block;
+    margin: 7px 10px;
+}
+#feedback {
+    display: block;
+    width: 55%;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+/* Input Styles */
+input[type=text], input[type="tel"], input[type="email"], input[type="date"], input[type="range"], input[type="radio"], select, textarea {
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 7px;
+    margin: 3px;
+}
+input[type="radio"] {
+    margin: 10px;
+}
+input.button {
+    padding: 5px;
+    border-radius: 10px;
+}
+/* pseudo-elements */
+input[type]:focus, textarea:focus {
+    outline: 0;
+}
+input[type="radio"]:hover, input[type="checkbox"]:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+input[type="radio"]:active, input[type="checkbox"]:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+input.button:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+input.button:active {
+    transform: scale(0.9)
+}

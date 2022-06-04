@@ -1,0 +1,110 @@
+
+/*
+=================================================
+                Layout Styles 
+=================================================
+*/
+/*
+=================================================
+                index.html
+=================================================
+*/
+.contents div {
+    float: left;
+    margin-left: 3%;
+    padding: 11px;
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 280px;
+}
+/*
+=================================================
+                about.html 
+=================================================
+*/
+.about_me {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 12px;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    height: 400px;
+}
+.skills,.hobby {
+    float: left;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 12px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.skills {
+    width: 34%;
+    height: 520px;
+}
+.hobby {
+    width: 34%;
+    height: 420px;
+}
+/*
+=================================================
+                career.html 
+=================================================
+*/
+table, th, td, tr {
+    height: 50px;
+    border: 1.1px solid black;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+.job_box {
+    margin-left: 6%;
+    width: 34%;
+    height: 480px;
+}
+.job_box2 {
+    margin-left: 13.5%;
+    width: 34%;
+    height: 380px;
+}
+.job_box3 {
+    margin: 5% 16%;
+    width: 65%;
+    height: 400px;
+}
+/*
+=================================================
+                SP.html
+=================================================
+*/
+.doverpoly, .job_box, .job_box2, .job_box3 {
+    float: left;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 12px;
+}
+.doverpoly {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 83%;
+    height: 1000px;
+}
+.sig, .cca, .eae {
+    float: left;
+    padding: 30px;
+}
+.sig, .cca {
+    margin-left: 5%;
+}
+.eae {
+    margin-left: 18%;
+}
